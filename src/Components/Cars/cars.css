@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.cars-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets//background-content.png");
+}
+.logo-return{
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 3px;
+}
+.logo-return:hover{
+    background-color: crimson;
+    color: grey;
+}
+.logo-return p {
+    padding: 6px;
+    font-family: "Lobster",cursive;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 10px;
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: none;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+}
+.nav-menu:hover{
+    background: none;
+}
+.nav1 p {
+    background-color:white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: crimson;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border: 2px solid crimson;
+}
+.icons,.cart-icon{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Lobster",cursive;
+    color: black;
+}
+.list-car{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% ;
+    justify-content: center;
+    gap: 4rem;
+    padding: 10px;
+    background: linear-gradient(rgb(182, 220, 223),#CCCCFF);
+    width: 100%;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 50px;
+}
+.cart{
+    width: 350px;
+    height: auto;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.info .name{
+    font-family: "Lobster",cursive;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.info .price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 3px;
+}
+.image{
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s ease;
+}
+.add{
+    width: 100px;
+    margin-left: 10px;
+    height: 30px;
+    border: 1px solid black;
+    background: none;
+    transition: all 0.5s ease;
+}
+.add:hover{
+    background-color:black ;
+    color: #fff;
+}
+
+@media screen and (max-width : 1024px) {
+    .icons{
+        display: none;
+    }
+    .logo-return{
+        width: 100px;
+        height: 40px;
+    }
+    .logo-return p {
+       font-size: 20px;
+    }
+    .cart-icon{
+        font-size: 40px;
+    }
+    .nav1 p {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .nav-menu{
+        width: 80px;
+        height: 40px;
+        background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+        top: 10px;
+    }
+    .list-car{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 2rem;
+        padding: 10px;
+    }
+
+}
+  @media screen and (max-width : 600px) {
+    .icons{
+        display: none;
+    }
+    .cart-icon{
+        font-size: 25px;
+    }
+    .nav-menu{
+        width: 50px;
+        height: 40px;
+        background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+        top: 10px;
+    }
+    .list-car{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+    .nav1 p {
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+    }
+
+}
+

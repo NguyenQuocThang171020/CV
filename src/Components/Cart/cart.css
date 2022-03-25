@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.cart-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets//background-content.png");
+    padding: 10px;
+}
+.home{
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+}
+.home:hover{
+    background-color: crimson;
+    color: grey;
+}
+.carts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+    width: 50%;
+    border: 1px solid crimson;
+    border-radius: 5px; 
+    text-align: center;  
+    margin-bottom: 20px;  
+    padding: 10px;
+}
+.infomation-cart{
+    width: 200px;
+    height: auto;
+}
+.infomation-cart .name{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.infomation-cart .name p{
+    font-family: "Lobster",cursive;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.infomation-cart .quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infomation-cart .quantity .subtract,
+.infomation-cart .quantity .added{
+    width:50px;
+    height: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: whitesmoke;
+    border: 2px solid crimson;
+    color: crimson;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.infomation-cart .quantity .subtract:hover,
+.infomation-cart .quantity .added:hover{
+    color: rgba(255, 255, 255, 1);
+    background: crimson;
+}
+.btn-remove{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.remove-item{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.remove-item:hover{
+    color: rgba(255, 255, 255, 1);
+    background: crimson;
+}
+.image-icon{
+    border-radius: 50%;
+}
+.total-item{
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+.total-item .total-price{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lobster",cursive;
+}
+.total-item span{
+    color: crimson;
+    font-family: "Poppins",sans-serif;
+}
+.sum-total{
+    text-align: center;
+}
+.sum-total .sum{
+    font-family: 'Lobster',cursive;
+    font-size:25px;
+}
+.sum-total span{
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom:3px solid crimson ;
+}
+.btn-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pay , .return{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    color:crimson;
+    font-family: "Lobster",cursive;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+.pay:hover , .return:hover{
+    color: rgba(255, 255, 255, 1);
+    background: crimson;
+}
+.empty{
+  text-align: center;
+  margin: 50px;
+}
+.empty h3{
+    font-size: 25px;
+    margin: 20px;
+}
+.empty .buy-cars{
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid crimson;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    color: crimson;
+    font-family: "Lobster" ,cursive;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+.empty .buy-cars:hover{
+    color: rgba(255, 255, 255, 1);
+    background: crimson;
+}
+@media screen and (max-width : 1024px) {
+    .cart-item{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width : 600px) {
+    .home{
+        width: 80px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .title-logo{
+        font-size: 30px;
+    }
+    .cart-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image{
+       text-align: center;
+       padding:10px ;
+    }
+    .image-icon{
+        width: 180px;
+        height: 180px;
+    }
+    .infomation-carts{
+        display: flex;
+        justify-content: center;
+    }
+    .carts{
+        margin-bottom: 50px;
+    }
+    .btn-remove{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+  }

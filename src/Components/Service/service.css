@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.service-container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.update , .transport,.policy,.a2{
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    height: 310px;
+    border: 2px solid crimson;
+}
+.repair{
+    border-radius: 50%;
+    border: 1px solid crimson;
+    padding: 5px;
+}
+.title-repair{
+    font-family: "Lobster" ,cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: crimson;
+}
+.detail{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(255, 255, 255, 1));
+    color: crimson;
+    border: 1px solid crimson;
+    bottom: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.detail:hover{
+    color: rgba(255, 255, 255, 1);
+    background: crimson;
+}
+@media screen and (max-width : 1024px) {
+    .my-services{
+        display: flex;
+        flex-direction: column;
+    }
+    .update , .transport,.policy,.a2{
+        width: 500px;
+        height: 430px;
+    }
+    .title-repair{
+        margin-top: 20px ;
+        margin-bottom: 20px;
+    }
+    .detail{
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }
+  }
+@media screen and (max-width : 600px) {
+    .my-services{
+        grid-template-columns: 1fr ;
+        margin: 10px;
+        padding: 10px;
+    }
+    .update , .transport,.policy,.a2{
+        width: 350px;
+        height: 310px;
+    }
+    .title-repair{
+        margin-top: 20px ;
+        margin-bottom: 20px;
+    }
+    .detail{
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+    }
+  }
